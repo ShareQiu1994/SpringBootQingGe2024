@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
     <mapper namespace="com.liubf.qingge2024.mapper.EmployeeMapper">
-        <select id="selectALL" resultType="com.liubf.qingge2024.entity.Employee">
+        <select id="selectAll" resultType="com.liubf.qingge2024.entity.Employee">
             select * from employee
         </select>
     </mapper>

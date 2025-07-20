@@ -14,7 +14,7 @@ public class EmployeeService {
     private EmployeeMapper employeeMapper;
 
     public List<Employee> selectAll() {
-       return employeeMapper.selectALL();
+       return employeeMapper.selectAll();
     }
 
 
