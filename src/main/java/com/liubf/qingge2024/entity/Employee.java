@@ -65,5 +65,18 @@ public class Employee {
         this.departmentId = departmentId;
     }
 
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", sex='" + sex + '\'' +
+                ", no='" + no + '\'' +
+                ", age=" + age +
+                ", description='" + description + '\'' +
+                ", departmentId=" + departmentId +
+                '}';
+    }
+
 
 }

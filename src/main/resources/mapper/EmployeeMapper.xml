@@ -6,4 +6,14 @@
         <select id="selectAll" resultType="com.liubf.qingge2024.entity.Employee">
             select * from employee
         </select>
+
+         <insert id="add" parameterType="com.liubf.qingge2024.entity.Employee" >
+             insert into `employee` (name,sex,no,age,description,department_id)
+             values (#{name},#{sex},#{no},#{age},#{description},#{departmentId})
+         </insert>
+
+        <update id="update" parameterType="com.liubf.qingge2024.entity.Employee">
+             update `employee` set name = #{name},sex = #{sex},no = #{no},name = #{name},age = #{age},description = #{description}, department_id = #{departmentId}
+             where id = #{id}
+        </update>
     </mapper>

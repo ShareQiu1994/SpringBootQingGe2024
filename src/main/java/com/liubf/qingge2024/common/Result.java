@@ -36,7 +36,9 @@ public class Result <T> implements Serializable {
     }
 
     // 成功返回的静态方法
-
+    public static <T> Result<T> success() {
+        return new Result<>(ResultCode.SUCCESS.getCode(), ResultCode.SUCCESS.getMessage());
+    }
 
     public static <T> Result<T> success(T data) {
         return new Result<>(ResultCode.SUCCESS.getCode(), ResultCode.SUCCESS.getMessage(), data);
